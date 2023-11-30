@@ -1,1 +1,1 @@
-# smart-horel-meeting
+# smart-hotel-meeting
