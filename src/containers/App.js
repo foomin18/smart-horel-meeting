@@ -156,6 +156,8 @@ class App extends Component {
     .on('transactioHash', (hash) => {});
     let myAppos = await this.state.smartHotel.methods.getUserAppo(this.state.account).call()
     this.setState({myAppos: myAppos});
+    let tokenBalance = await this.state.smartHotel.methods.getTokenBalance(this.state.account).call();
+    this.setState({tokenBalance: tokenBalance});
     this.setState({loading: false});
   };
 
